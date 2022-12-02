@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\common.cpp" />
+    <ClCompile Include="..\src\shader.cpp">
+      <Filter>drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\program.cpp">
+      <Filter>drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\frameBuffer.cpp">
+      <Filter>drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\vertexBuffer.cpp">
+      <Filter>drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\trackball.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\common.h" />
+    <ClInclude Include="..\src\shader.h">
+      <Filter>drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\program.h">
+      <Filter>drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\frameBuffer.h">
+      <Filter>drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\vertexBuffer.h">
+      <Filter>drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\trackball.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="drawing">
+      <UniqueIdentifier>{ac574310-effe-4244-bb41-9bdac9187763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="drawing\shaders">
+      <UniqueIdentifier>{a557a251-3070-4766-8f54-d32a91a23916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="utils">
+      <UniqueIdentifier>{afe4eb71-5a0a-4b16-91a1-3b0ccc3cad40}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\shaders\passthrough.vert">
+      <Filter>drawing\shaders</Filter>
+    </None>
+    <None Include="..\shaders\passthrough.frag">
+      <Filter>drawing\shaders</Filter>
+    </None>
+    <None Include="..\shaders\singleChannel.frag">
+      <Filter>drawing\shaders</Filter>
+    </None>
+    <None Include="..\shaders\multiChannel.frag">
+      <Filter>drawing\shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
